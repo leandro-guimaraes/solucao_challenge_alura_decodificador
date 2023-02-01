@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> <!--Para poder usar @media query-->
+        <title>Decodificador</title> 
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Importando fonte Inter-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link id="head-icone-pagina" rel="shortchut icon" href="imagens/icone-cadeado-fechado.svg" rel="imagem/x-icon"
+    </head>
+    <body class="pagina-inteira-corpo">
+        <main class="entrada-saida-botoes">
+            <section class="secao-entrada-botoes">
+
+                <section class="cabecalho-alura-logo">
+                    <img class="icone-alura-logo" src="imagens/logoAlura.png" alt="Logo da Alura">
+                </section>
+
+                <section class="secao-entrada-usuario">
+                    <label><textarea id="campo-entrada-usuario" class="campo-entrada-usuario" placeholder="Digite seu texto"></textarea></label>
+                </section>
+
+                <section class="secao-criptografar-descriptografar">
+                    <p class="informativo-formatacao-entrada">Apenas letras minúsculas e sem acento</p>
+                    <label><input id="botao-criptografar-usuario" class="botao-criptografar-usuario" type="submit" value="Criptografar"></label>
+                    <label><input id="botao-descriptografar-usuario" class="botao-descriptografar-usuario" type="submit" value="Descriptografar"></label>
+                </section>
+
+            </section>
+
+
+            <section class="secao-saida-texto">
+
+                <section id="mensagem-antes-processamento" class="mensagem-antes-processamento">
+                    <img class="imagem-mulher-lupa" src="imagens/boneco.png" alt="icone de uma moça olhando um diamante flutuando">
+                    <h1 class="titulo-antes-processamento">Nenhuma mensagem encontrada</h1>
+                    <p class="paragrafo-antes-processamento">Digite um texto que você deseja criptografar ou descriptografar no campo ao lado.</p>
+                </section>
+
+                <section id="campo-pos-processamento" class="campo-pos-processamento">
+                    <label><textarea id="campo-saida-mensagem" class="campo-saida-mensagem" disabled></textarea></label> 
+                    <label><input id="botao-copiar-saida" class="botao-copiar-saida" type="submit" value="Copiar"></label>
+                </section>
+                
+            </section>
+
+
+
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>
